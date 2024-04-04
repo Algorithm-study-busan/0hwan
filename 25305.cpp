@@ -24,6 +24,8 @@ int main() {
     // 결과 출력
     std::cout << score[N-k];
 
+    delete[] score;
+
 }
 
 int partition(int list[], int left, int right) {
