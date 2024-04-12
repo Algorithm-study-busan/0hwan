@@ -86,6 +86,5 @@ void clearStack(vector<char>* result, stack<char>* temp) {
         str.push_back(temp->top());
         temp->pop();
     }
-    reverse(str.begin(), str.end());
-    result->insert(result->end(), str.begin(), str.end());
+    result->insert(result->end(), str.rbegin(), str.rend());
 }
